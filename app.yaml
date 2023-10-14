@@ -1,0 +1,11 @@
+runtime: python37
+# service: default
+
+handlers:
+- url: /.*
+  script: auto
+
+env_variables:
+  # Storage ENV
+  DEFAULT_BUCKET: "awesome-bucket-project"
+  PUBLIC_URI: 'https://storage.googleapis.com'
